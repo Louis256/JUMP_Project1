@@ -28,6 +28,7 @@ public class JumpProject1Application {
 		sale.deleteEmployee(1);
 		//get employees by ID
 		sale.getEmployee(2);
+		//sale.checkEmployee(1);
 		//update employee by ID
 		sale.updatEmployee(2, "Nick");
 		//show employees

@@ -67,6 +67,16 @@ public class Department {
 		if(index != -1) {
 			return employees[index];
 		}
+		
+		return null;
+	}
+	
+	public Employee checkEmployee(int id) throws RecordNotFoundException {
+		int index = indexOfEmployee(id);
+		if(index != -1) {
+			return employees[index];
+		}
+		if(index == -1) {throw new RecordNotFoundException("Employee not exit");}
 		return null;
 	}
 	
