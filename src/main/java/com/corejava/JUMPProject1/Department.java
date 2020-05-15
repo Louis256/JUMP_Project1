@@ -61,7 +61,7 @@ public class Department {
 		return -1;
 		
 	}
-	//get employee
+	//get employee id
 	public Employee getEmployee(int id) {
 		int index = indexOfEmployee(id);
 		if(index != -1) {
@@ -70,6 +70,7 @@ public class Department {
 		
 		return null;
 	}
+	
 	
 	public Employee checkEmployee(int id) throws RecordNotFoundException {
 		int index = indexOfEmployee(id);
